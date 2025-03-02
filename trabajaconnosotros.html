@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="descripcion" content="agencia inmobiliaria">
+    <meta name="keywords" content="agencia,inmobiliaria,pisos,venta,alquiler,agente inmobiliario,vivienda">
+    <meta name="author" content="Alfredo Jose Otero Navarro">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css" type="text/css">
+    <title>Inmobiliaria Slide</title>
+   
+</head>
+
+<body>
+
+     <!--MENU Y LOGO-->
+    <header>
+        <figure class="logo">
+            <img src="logo.avif" alt="Inmobiliaria Slide" title="Inmobiliaria Slide">
+        </figure>
+        <h1 class="titulo">Inmobiliaria Slide</h1>
+        <nav class="navegacion">
+        <ul class="menu">
+            <li><a href="index.html" title="Enlace genérico">Inicio</a></li>
+            <li><a href="quienessomos.html" title="Enlace genérico">Quienes somos</a></li>
+            <li><a href="productos.html" title="Enlace genérico">Productos y Servicios</a></li>
+            <li><a href="contacto.html" title="Enlace genérico">Contacto</a></li>
+            <li><a href="trabajaconnosotros.html" title="Enlace genérico">Trabaja con nosotros</a></li>
+        </ul>
+        </nav>
+    </header>
+
+        <!--CONTENIDO PRINCIPAL-->
+    <main>
+        <section>
+            <h2>Únete a nuestra gran familia</h2>
+            <article style="height:800px;">
+                <h3>Rellena tus datos y nos pondremos en contacto</h3>
+                <form method="get" action="#" enctype="multipart/form-data">
+                    <fieldset style="padding: 20px;margin-top: 20px;">
+                        <legend>Datos personales</legend>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" required>
+                        <label for="apellidos">Apellidos</label>
+                        <input type="text" name="apellidos" id="apellidos" required>
+                        <label for="dni">Dni</label>
+                        <input type="text" name="dni" id="dni" required>
+                        <label for="sistema_simple">Sexo</label>
+                        <select name="sistema_simple" id="sistema_simple">
+                            <option value="" disabled selected>- selecciona -</option>
+                            <option value="mujer">Mujer</option>
+                            <option value="hombre">Hombre</option>
+                        </select>
+                        <label for="fecha">Introduzca su fecha de nacimiento</label>
+                        <input type="date" name="fecha" id="fecha" max="2050-12-31" min="1924-12-01" required><br>
+                        <label for="ciudad">Ciudad</label>
+                        <input type="text" name="ciudad" id="ciudad" required>
+                        <label for="ciudad">Nacionalidad</label>
+                        <input type="text" name="nacionalidad" id="nacionalidad" required>
+                        <label for="ciudad">Código postal</label>
+                        <input type="text" name="codigopostal" id="codigopostal" pattern="[0-9]{5}" placeholder="xxxxx" size="5" maxlength="5" required>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required>
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" name="telefono" id="telefono" pattern="[0-9]{9}" placeholder="xxxxxxxxx" size="9" maxlength="9" required>
+                    </fieldset>
+                    <fieldset style="padding: 20px;margin-top: 20px;">
+                        <legend>Formación</legend>
+                        <label for="titulacion1">Titulación 1</label><br>
+                        <input type="text" name="titulacion1" id="titulacion1" required>
+                        <label for="mes1">Mes de inicio de curso:</label>
+                        <input type="month" name="mes1" id="mes1">
+                        <label for="mes2">Mes de fin de curso:</label>
+                        <input type="month" name="mes2" id="mes2"><br>
+                        <label for="titulacion2">Titulación 2</label><br>
+                        <input type="text" name="titulacion2" id="titulacion2">
+                        <label for="mes3">Mes de inicio de curso:</label>
+                        <input type="month" name="mes3" id="mes3">
+                        <label for="mes4">Mes de fin de curso:</label>
+                        <input type="month" name="mes4" id="mes4"><br>
+                    </fieldset>
+                    <fieldset style="padding: 20px;margin-top: 20px;">
+                        <legend>Idiomas</legend>
+                        <label for="nombre">Idioma 1</label><br>
+                        <input type="text" name="idioma" id="idioma" required>
+                        <label for="sistema_simple">Hablado</label>
+                         <select name="sistema_simple2" id="sistema_simple2">
+                            <option value="" disabled selected>- selecciona -</option>
+                            <option value="windows">Excelente</option>
+                            <option value="linux">Bien</option>
+                            <option value="mac">Regular</option>
+                            <option value="otros">Nada</option>
+                        </select>
+                        <label for="sistema_simple">Leído </label>
+                        <select name="sistema_simple3" id="sistema_simple3">
+                            <option value="" disabled selected>- selecciona -</option>
+                            <option value="windows">Excelente</option>
+                            <option value="linux">Bien</option>
+                            <option value="mac">Regular</option>
+                            <option value="otros">Nada</option>
+                        </select>
+                        <label for="sistema_simple">Escrito</label>
+                        <select name="sistema_simple4" id="sistema_simple4">
+                            <option value="" disabled selected>- selecciona -</option>
+                            <option value="windows">Excelente</option>
+                            <option value="linux">Bien</option>
+                            <option value="mac">Regular</option>
+                            <option value="otros">Nada</option>
+                        </select><br>
+                        <label for="nombre">Idioma 2</label><br>
+                        <input type="text" name="idioma2" id="idioma2" required>
+                        <label for="sistema_simple">Hablado</label>
+                         <select name="sistema_simple5" id="sistema_simple5">
+                            <option value="" disabled selected>- selecciona -</option>
+                            <option value="windows">Excelente</option>
+                            <option value="linux">Bien</option>
+                            <option value="mac">Regular</option>
+                            <option value="otros">Nada</option>
+                        </select>
+                        <label for="sistema_simple">Leído </label>
+                        <select name="sistema_simple6" id="sistema_simple6">
+                            <option value="" disabled selected>- selecciona -</option>
+                            <option value="windows">Excelente</option>
+                            <option value="linux">Bien</option>
+                            <option value="mac">Regular</option>
+                            <option value="otros">Nada</option>
+                        </select>
+                        <label for="sistema_simple">Escrito</label>
+                        <select name="sistema_simple7" id="sistema_simple7">
+                            <option value="" disabled selected>- selecciona -</option>
+                            <option value="windows">Excelente</option>
+                            <option value="linux">Bien</option>
+                            <option value="mac">Regular</option>
+                            <option value="otros">Nada</option>
+                        </select>
+                    </fieldset>
+                    <fieldset style="padding: 20px;margin-top: 20px;margin-bottom: 20px;">
+                        <legend>Currículum vitae</legend>
+                        <label for="nombre">Adjunte su Currículum</label>
+                        <input type="file" name="curriculum" id="curriculum">
+                    </fieldset>
+                    <input type="submit" value="Enviar formulario">
+                    <input type="reset" value="Resetear formulario">
+                </form>
+            </article>
+           
+         
+        </section>
+       
+    </main>
+   
+    <!--PIE DE WEB-->
+    <footer>
+        <h4>2025 Inmobiliaria Slide</h4>
+        <p>
+        <a href="https://www.instagram.com/" target="_blank"><img class="redes" src="instagram.png" alt="instagram">
+        </a>
+        <a href="https://es-es.facebook.com/" target="_blank"><img class="redes" src="facebook.png" alt="facebook"></a> 
+        <a href="https://www.tiktok.com/es/" target="_blank"><img class="redes" src="tiktok.png" alt="tiktok"></a></p>
+    </footer>
+ 
+
+</body>
+
+</html>
